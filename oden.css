@@ -1,0 +1,92 @@
+h1 {
+    background-color: orangered;
+    border: 3px;
+}
+
+h3 {
+    background-color: aqua;
+}
+
+h2 {
+    background-color: greenyellow;
+}
+
+#noren {
+    height: 150px;
+    width: 500px;
+}
+
+#oden{
+    height: 20%;
+    width: 20%;
+}
+
+body {
+    width: 1000px;
+}
+
+.square {
+    width: auto;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+#result1 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result2 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result3 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result4 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result5 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result6 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result7 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result8 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result9 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#result10 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
