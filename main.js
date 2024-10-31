@@ -1,5 +1,9 @@
 'use strict'
 
+
+let total = 0;
+let moneyInPossession = 90000;
+const amount = 3000;
 //SSRリストにアドインする関数（ボタンクリックによるイベントリスナー）
 function addSSR() {
   console.log("do: addSSR");
@@ -53,6 +57,20 @@ function letsGacha() {
   // console.log(numberOfTimes)
   for (let i = 0; i < numberOfTimes; i++) {
     document.getElementById(`result${i + 1}`).innerText = randRare(i);
+  }
+  //トータル回数
+  total += Number(numberOfTimes);
+  document.getElementById("total").innerText = total + "回";
+  //残金
+  let price = amount * Number(numberOfTimes);
+  const moneyId = document.getElementById("money");
+  moneyInPossession -= price;
+  if (moneyInPossession >= price || moneyInPossession === 0) {
+    moneyId.innerText = `${moneyInPossession}ペリカ`;
+  } else {
+    moneyId.innerText = `【借金】${Math.abs(moneyInPossession)}ペリカ`;
+    moneyId.style.color = "white";
+    moneyId.style.backgroundColor = "red";
   }
 }
 
