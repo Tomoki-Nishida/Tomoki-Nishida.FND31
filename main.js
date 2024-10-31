@@ -65,7 +65,7 @@ function letsGacha() {
   let price = amount * Number(numberOfTimes);
   const moneyId = document.getElementById("money");
   moneyInPossession -= price;
-  if (moneyInPossession >= price || moneyInPossession === 0) {
+  if (moneyInPossession > 0) {
     moneyId.innerText = `${moneyInPossession}ペリカ`;
   } else {
     moneyId.innerText = `【借金】${Math.abs(moneyInPossession)}ペリカ`;
