@@ -62,7 +62,7 @@ function randRare(times) {
   function lotteryR() {
     let rand = Math.random().toFixed(2);
     let r = document.getElementsByClassName("rClass");
-    let lottery = 1 / r.length
+    let lottery = 1 / r.length;
     let totalLottery = 0;
     for (const ingredients of r) {
         totalLottery += lottery;
