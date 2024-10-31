@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <link rel="stylesheet" href="oden.css">
+        <title>おでんガチャ🍢</title>
+    </head>
+    <body>
+        <div class="square">
+        <nobr>
+            <img src="C:\Users\1552784\Desktop\DIG\dig-foundations\foundations\最終課題2\noren1_red.png" id="noren">
+            <img src="C:\Users\1552784\Desktop\DIG\dig-foundations\foundations\最終課題2\noren1_red.png" id="noren">
+        </nobr>
+        <h1>おでんガチャ🍢</h1>
+        <p>ジョークアプリですが乱数とselect、input要素をカスタマイズなど、学んだことを多く活かす発想から作りました…真面目ですよ😈😈</p>
+        <p>※おでんのレアリティはTomokiの独断と偏見です、異論は受け付けます🍢&emsp;※ちなみに味噌ではなくからしやしょうが醬油派です。</p>
+        <img src="C:\Users\1552784\Desktop\DIG\dig-foundations\foundations\最終課題2\oden.png" id="oden">
+        <div>
+            <h3>Pick UP👆&emsp;当選確立…他のSSRの2倍!</h3>
+            <select name="ingredients" id="pickup">
+                <option disabled>-select-</option>
+                <option>たまご⭐⭐⭐</option>
+                <option>大根⭐⭐⭐</option>
+            </select>
+        </div>
+        <h3>SSR⭐⭐⭐&emsp;・・・5%</h3>
+        <p>具材を追加して下さい！</p>
+        <input type="text" id="ssrIngredients" placeholder="例）たまご">
+        <input type="button" value="追加！" id="ssrButton">
+        <br>
+        <div class="ssr">
+            <p class="ssrClass">たまご⭐⭐⭐</p>
+            <p class="ssrClass">大根⭐⭐⭐</p>
+        </div>
+        <h3>SR⭐⭐&emsp;・・・20%</h3>
+        <p>具材を追加して下さい！</p>
+        <input type="text" id="srIngredients" placeholder="例）たまご">
+        <input type="button" value="追加！" id="srButton">
+        <br>
+        <div class="sr">
+            <p class="srClass">ちくわ⭐⭐</p>
+            <p class="srClass">がんも⭐⭐</p>
+        </div>
+        <h3>R⭐&emsp;・・・75%</h3>
+        <p>具材を追加して下さい！</p>
+        <input type="text" id="rIngredients" placeholder="例）たまご">
+        <input type="button" value="追加！" id="rButton">
+        <br>
+        <div class="r">
+            <p class="rClass">ごぼう天⭐</p>
+            <p class="rClass">しらたき⭐</p>
+        </div>
+        <br>
+        <h2>よし、何連やってく??&emsp;&emsp;ガチャやり過ぎ注意！</h3>
+        <input type="number" min="0" max="10" oninput="javascript: this.value = this.value.slice(0, 2);" id="times">
+        <input type="button" value="Let's Gacha!!" id="gacha">
+        <p>Totalガチャ回数：</p>
+        <br>
+        <h3>Result</h3>
+        <div id="result">
+                <span id="result1"></span>
+                <span id="result2"></span>
+                <span id="result3"></span>
+                <span id="result4"></span>
+                <span id="result5"></span>
+            <br>
+            <br>
+                <span id="result6"></span>
+                <span id="result7"></span>
+                <span id="result8"></span>
+                <span id="result9"></span>
+                <span id="result10"></span>
+            </nobr>
+        </div>
+        <script type="text/javascript" src="gachasystem.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <h3>Tomokiコメント</h3>
+        <p>今回は最低限で実装しました。時間があれば天井機能とか各食材に画像を貼ったりを実装したいですね…。</p>
+        <p>ざっくり以下のステップで実装しています！</p>
+        <li>具材追加</li>
+        <li>ピックアップセレクト</li>
+        <li>『Let's Gacha』を押すと…</li>
+        <li>まずレアリティの抽選が開始</li>
+        <li>対象レアリティの中から食材の抽選</li>
+        <p>今回は発表の便宜上、デフォルトで食材を入力しています😊</p>
+        </div>
+    </body>
+</html>
