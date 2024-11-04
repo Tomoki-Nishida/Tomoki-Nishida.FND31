@@ -3,8 +3,7 @@
 //レアリティ確率の関数
 function randRare(times) {
     let result = Math.random().toFixed(2);
-    const ssrList = document.getElementById
-    const resultBox = document.getElementById(`result${times + 1}`)
+    const resultBox = document.getElementById(`result${times}`)
     if (result > 0.95) {
       resultBox.style.backgroundColor = "orange";
       return lotterySSR();
@@ -16,6 +15,19 @@ function randRare(times) {
       return lotteryR();
     }
   }
+
+//10連☆2以上の場合の確立の関数
+function randRareForTen(times) {
+  let result = Math.random().toFixed(2);
+  const resultBox = document.getElementById(`result${times}`)
+  if (result > 0.95) {
+    resultBox.style.backgroundColor = "orange";
+    return lotterySSR();
+  } else {
+    resultBox.style.backgroundColor = "blueviolet";
+    return lotterySR();
+  }
+}
   
   
   //レアリティ内の食材を割り当てる関数
