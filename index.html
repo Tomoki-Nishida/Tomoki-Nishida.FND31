@@ -14,7 +14,7 @@
             <img src="noren1_red.png" id="noren">
         </nobr>
         <h1>おでんガチャ🍢</h1>
-        <p>ジョークアプリですが乱数とselect、input要素をカスタマイズなど、学んだことを多く活かす発想から作りました…真面目ですよ😈😈</p>
+        <p>ジョークアプリですが乱数とselect、inputなど、学んだことやは静的な機能を多く実装できる発想から作りました…真面目ですよ😈😈</p>
         <p>※おでんのレアリティはTomokiの独断と偏見です、異論は受け付けます🍢&emsp;※ちなみに味噌ではなくからしやしょうが醬油派です。</p>
         <img src="oden.png" id="oden">
         <div>
@@ -54,6 +54,8 @@
         </div>
         <br>
         <h2>よし、何連やってく??&emsp;&emsp;ガチャやり過ぎ注意！</h3>
+        <p>天井: 90回引いたら</p>
+        <p>SR確定: 10連ガチャ毎</p>
         <input type="number" min="0" max="10" oninput="javascript: this.value = this.value.slice(0, 2);" id="times">
         <input type="button" value="Let's Gacha!!" id="gacha">
         <br>
@@ -64,25 +66,12 @@
         <span id="money">90000ペリカ</span>
         <br>
         <h3>Result</h3>
-        <div id="result">
-                <span id="result1"></span>
-                <span id="result2"></span>
-                <span id="result3"></span>
-                <span id="result4"></span>
-                <span id="result5"></span>
-            <br>
-            <br>
-                <span id="result6"></span>
-                <span id="result7"></span>
-                <span id="result8"></span>
-                <span id="result9"></span>
-                <span id="result10"></span>
-            </nobr>
+        <div class="result">
         </div>
         <script type="text/javascript" src="gachasystem.js"></script>
         <script type="text/javascript" src="main.js"></script>
         <h3>Tomokiコメント</h3>
-        <p>今回は最低限で実装しました。時間があれば天井機能とか各食材に画像を貼ったりを実装したいですね…。</p>
+        <p>今回はここまで実装しましたが、アニメーションを段階に、画像の表示等を実装したいですね…。</p>
         <p>ざっくり以下のステップで実装しています！</p>
         <li>具材追加</li>
         <li>ピックアップセレクト</li>
