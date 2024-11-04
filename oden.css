@@ -3,7 +3,8 @@ h1 {
 }
 
 h3 {
-    background-color: aqua;
+    background-color:darkblue;
+    color: white;
 }
 
 h2 {
@@ -31,62 +32,111 @@ body {
 }
 
 #result1 {
+    background-color: aqua;
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result2 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result3 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result4 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result5 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result6 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result7 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result8 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result9 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
 #result10 {
+    animation-name: poyoyon2;
+    animation-duration: 0.7s;
     width: 150px;
     height: 150px;
-    display: inline-block;
+    border-radius: 10px;
 }
 
+@keyframes poyoyon2 {
+    0%  {
+      transform: scale(1.0, 1.0) translate(0, 0);
+    }
+    15% {
+      transform: scale(0.98, 0.9) translate(0, 5px);
+    }
+    30% {
+      transform: scale(1.02, 1.0) translate(0, 8px);
+    }
+    50% {transform: scale(0.98, 1.05) translate(0, -8px);
+    }
+    70% {
+      transform: scale(1.0, 0.9) translate(0, 5px);
+    }
+    100% {
+      transform: scale(1.0, 1.0) translate(0, 0);
+    }
+    0%, 100% {
+      opacity: 1;
+    }
+  }
+
+.result {
+    display: grid;
+    grid-template-columns: 160px 160px 160px 160px 160px;
+    grid-template-rows: 160px 160px;
+}
